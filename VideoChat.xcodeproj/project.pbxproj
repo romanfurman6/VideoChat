@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD3922641E8E65F70024877A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3922631E8E65F70024877A /* AppDelegate.swift */; };
+		AD39226B1E8E65F70024877A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD39226A1E8E65F70024877A /* Assets.xcassets */; };
+		AD39226E1E8E65F70024877A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD39226C1E8E65F70024877A /* LaunchScreen.storyboard */; };
+		AD6EDA321E8E7B1500E19A61 /* Decodable&Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA311E8E7B1500E19A61 /* Decodable&Encodable.swift */; };
+		AD6EDA351E8E7B2C00E19A61 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA341E8E7B2C00E19A61 /* CoordinatorProtocol.swift */; };
+		AD6EDA371E8E7B3E00E19A61 /* NibInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA361E8E7B3E00E19A61 /* NibInitializable.swift */; };
+		AD6EDA391E8E7B4A00E19A61 /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA381E8E7B4A00E19A61 /* StoryboardInitializable.swift */; };
+		AD6EDA3B1E8E7B6200E19A61 /* RxHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA3A1E8E7B6200E19A61 /* RxHelpers.swift */; };
+		AD6EDA501E8E8F4500E19A61 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA4C1E8E8F4500E19A61 /* MainCoordinator.swift */; };
+		AD6EDA521E8E8F4500E19A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA4E1E8E8F4500E19A61 /* MainViewController.swift */; };
+		AD6EDA591E8E8F5E00E19A61 /* CallCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA551E8E8F5E00E19A61 /* CallCoordinator.swift */; };
+		AD6EDA5B1E8E8F5E00E19A61 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA571E8E8F5E00E19A61 /* CallViewController.swift */; };
+		AD6EDA5C1E8E8F5E00E19A61 /* CallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA581E8E8F5E00E19A61 /* CallViewModel.swift */; };
+		AD6EDA601E8E8F8F00E19A61 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA5F1E8E8F8F00E19A61 /* AppCoordinator.swift */; };
+		AD6EDA621E8E91AB00E19A61 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6EDA611E8E91AB00E19A61 /* MainViewController.storyboard */; };
+		AD6EDA641E8E927D00E19A61 /* CallViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6EDA631E8E927D00E19A61 /* CallViewController.storyboard */; };
+		AD6EDA661E8EA36000E19A61 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA651E8EA36000E19A61 /* Constant.swift */; };
+		AD6EDA6C1E8EAB3200E19A61 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA681E8EAB3200E19A61 /* LoginCoordinator.swift */; };
+		AD6EDA6E1E8EAB3200E19A61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA6A1E8EAB3200E19A61 /* LoginViewController.swift */; };
+		AD6EDA6F1E8EAB3200E19A61 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA6B1E8EAB3200E19A61 /* LoginViewModel.swift */; };
+		AD6EDA711E8EAB5300E19A61 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6EDA701E8EAB5300E19A61 /* LoginViewController.storyboard */; };
+		F2F76CC01F39B2967E43B91E /* Pods_VideoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDF362EFA77DB1C6426EE48 /* Pods_VideoChat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2EDF362EFA77DB1C6426EE48 /* Pods_VideoChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3922601E8E65F70024877A /* VideoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3922631E8E65F70024877A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD39226A1E8E65F70024877A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD39226D1E8E65F70024877A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD39226F1E8E65F70024877A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6EDA311E8E7B1500E19A61 /* Decodable&Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decodable&Encodable.swift"; sourceTree = "<group>"; };
+		AD6EDA341E8E7B2C00E19A61 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		AD6EDA361E8E7B3E00E19A61 /* NibInitializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInitializable.swift; sourceTree = "<group>"; };
+		AD6EDA381E8E7B4A00E19A61 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
+		AD6EDA3A1E8E7B6200E19A61 /* RxHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxHelpers.swift; sourceTree = "<group>"; };
+		AD6EDA4C1E8E8F4500E19A61 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainCoordinator.swift; path = Main/MainCoordinator.swift; sourceTree = "<group>"; };
+		AD6EDA4E1E8E8F4500E19A61 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Main/MainViewController.swift; sourceTree = "<group>"; };
+		AD6EDA551E8E8F5E00E19A61 /* CallCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallCoordinator.swift; path = Call/CallCoordinator.swift; sourceTree = "<group>"; };
+		AD6EDA571E8E8F5E00E19A61 /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallViewController.swift; path = Call/CallViewController.swift; sourceTree = "<group>"; };
+		AD6EDA581E8E8F5E00E19A61 /* CallViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallViewModel.swift; path = Call/CallViewModel.swift; sourceTree = "<group>"; };
+		AD6EDA5F1E8E8F8F00E19A61 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AD6EDA611E8E91AB00E19A61 /* MainViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		AD6EDA631E8E927D00E19A61 /* CallViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CallViewController.storyboard; sourceTree = "<group>"; };
+		AD6EDA651E8EA36000E19A61 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AD6EDA681E8EAB3200E19A61 /* LoginCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginCoordinator.swift; path = Login/LoginCoordinator.swift; sourceTree = "<group>"; };
+		AD6EDA6A1E8EAB3200E19A61 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Login/LoginViewController.swift; sourceTree = "<group>"; };
+		AD6EDA6B1E8EAB3200E19A61 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Login/LoginViewModel.swift; sourceTree = "<group>"; };
+		AD6EDA701E8EAB5300E19A61 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		D567A720DBB1950B11B30598 /* Pods-VideoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat.debug.xcconfig"; sourceTree = "<group>"; };
+		EF18DD944ACEC2925DE990FC /* Pods-VideoChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD39225D1E8E65F70024877A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F76CC01F39B2967E43B91E /* Pods_VideoChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CF22C896BAD659CE3B895E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EDF362EFA77DB1C6426EE48 /* Pods_VideoChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD3922571E8E65F70024877A = {
+			isa = PBXGroup;
+			children = (
+				AD3922621E8E65F70024877A /* VideoChat */,
+				AD3922611E8E65F70024877A /* Products */,
+				AFACA17835FC04F019A28F0C /* Pods */,
+				0CF22C896BAD659CE3B895E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD3922611E8E65F70024877A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD3922601E8E65F70024877A /* VideoChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD3922621E8E65F70024877A /* VideoChat */ = {
+			isa = PBXGroup;
+			children = (
+				AD3922631E8E65F70024877A /* AppDelegate.swift */,
+				AD6EDA5F1E8E8F8F00E19A61 /* AppCoordinator.swift */,
+				AD6EDA5D1E8E8F6A00E19A61 /* Networking */,
+				AD3922841E8E78660024877A /* Screens */,
+				AD6EDA301E8E7ACA00E19A61 /* Helpers */,
+				AD3922751E8E66130024877A /* SupportFiles */,
+			);
+			path = VideoChat;
+			sourceTree = "<group>";
+		};
+		AD3922751E8E66130024877A /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AD39226A1E8E65F70024877A /* Assets.xcassets */,
+				AD39226C1E8E65F70024877A /* LaunchScreen.storyboard */,
+				AD39226F1E8E65F70024877A /* Info.plist */,
+				AD6EDA651E8EA36000E19A61 /* Constant.swift */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		AD3922841E8E78660024877A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AD6EDA671E8EAB1A00E19A61 /* Login */,
+				AD6EDA421E8E8F1300E19A61 /* Main */,
+				AD6EDA411E8E8F0D00E19A61 /* Call */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AD6EDA301E8E7ACA00E19A61 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AD6EDA341E8E7B2C00E19A61 /* CoordinatorProtocol.swift */,
+				AD6EDA311E8E7B1500E19A61 /* Decodable&Encodable.swift */,
+				AD6EDA361E8E7B3E00E19A61 /* NibInitializable.swift */,
+				AD6EDA381E8E7B4A00E19A61 /* StoryboardInitializable.swift */,
+				AD6EDA3A1E8E7B6200E19A61 /* RxHelpers.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		AD6EDA411E8E8F0D00E19A61 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				AD6EDA551E8E8F5E00E19A61 /* CallCoordinator.swift */,
+				AD6EDA571E8E8F5E00E19A61 /* CallViewController.swift */,
+				AD6EDA581E8E8F5E00E19A61 /* CallViewModel.swift */,
+				AD6EDA631E8E927D00E19A61 /* CallViewController.storyboard */,
+			);
+			name = Call;
+			sourceTree = "<group>";
+		};
+		AD6EDA421E8E8F1300E19A61 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AD6EDA4C1E8E8F4500E19A61 /* MainCoordinator.swift */,
+				AD6EDA4E1E8E8F4500E19A61 /* MainViewController.swift */,
+				AD6EDA611E8E91AB00E19A61 /* MainViewController.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		AD6EDA5D1E8E8F6A00E19A61 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AD6EDA5E1E8E8F7600E19A61 /* Service */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		AD6EDA5E1E8E8F7600E19A61 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		AD6EDA671E8EAB1A00E19A61 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AD6EDA681E8EAB3200E19A61 /* LoginCoordinator.swift */,
+				AD6EDA6A1E8EAB3200E19A61 /* LoginViewController.swift */,
+				AD6EDA6B1E8EAB3200E19A61 /* LoginViewModel.swift */,
+				AD6EDA701E8EAB5300E19A61 /* LoginViewController.storyboard */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		AFACA17835FC04F019A28F0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D567A720DBB1950B11B30598 /* Pods-VideoChat.debug.xcconfig */,
+				EF18DD944ACEC2925DE990FC /* Pods-VideoChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD39225F1E8E65F70024877A /* VideoChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD3922721E8E65F70024877A /* Build configuration list for PBXNativeTarget "VideoChat" */;
+			buildPhases = (
+				561598C03E4FB2D9BFC40294 /* [CP] Check Pods Manifest.lock */,
+				AD39225C1E8E65F70024877A /* Sources */,
+				AD39225D1E8E65F70024877A /* Frameworks */,
+				AD39225E1E8E65F70024877A /* Resources */,
+				6CDC1B03307273DACCE8F297 /* [CP] Embed Pods Frameworks */,
+				BCAF4C71DE58C337A1B16B9F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoChat;
+			productName = VideoChat;
+			productReference = AD3922601E8E65F70024877A /* VideoChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD3922581E8E65F70024877A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mac First UPTech";
+				TargetAttributes = {
+					AD39225F1E8E65F70024877A = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 29286X6DM7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AD39225B1E8E65F70024877A /* Build configuration list for PBXProject "VideoChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD3922571E8E65F70024877A;
+			productRefGroup = AD3922611E8E65F70024877A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD39225F1E8E65F70024877A /* VideoChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD39225E1E8E65F70024877A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6EDA621E8E91AB00E19A61 /* MainViewController.storyboard in Resources */,
+				AD39226E1E8E65F70024877A /* LaunchScreen.storyboard in Resources */,
+				AD6EDA711E8EAB5300E19A61 /* LoginViewController.storyboard in Resources */,
+				AD39226B1E8E65F70024877A /* Assets.xcassets in Resources */,
+				AD6EDA641E8E927D00E19A61 /* CallViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		561598C03E4FB2D9BFC40294 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CDC1B03307273DACCE8F297 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCAF4C71DE58C337A1B16B9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoChat/Pods-VideoChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD39225C1E8E65F70024877A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6EDA6E1E8EAB3200E19A61 /* LoginViewController.swift in Sources */,
+				AD6EDA6C1E8EAB3200E19A61 /* LoginCoordinator.swift in Sources */,
+				AD6EDA371E8E7B3E00E19A61 /* NibInitializable.swift in Sources */,
+				AD6EDA521E8E8F4500E19A61 /* MainViewController.swift in Sources */,
+				AD6EDA3B1E8E7B6200E19A61 /* RxHelpers.swift in Sources */,
+				AD6EDA661E8EA36000E19A61 /* Constant.swift in Sources */,
+				AD6EDA5C1E8E8F5E00E19A61 /* CallViewModel.swift in Sources */,
+				AD6EDA601E8E8F8F00E19A61 /* AppCoordinator.swift in Sources */,
+				AD6EDA391E8E7B4A00E19A61 /* StoryboardInitializable.swift in Sources */,
+				AD6EDA501E8E8F4500E19A61 /* MainCoordinator.swift in Sources */,
+				AD3922641E8E65F70024877A /* AppDelegate.swift in Sources */,
+				AD6EDA5B1E8E8F5E00E19A61 /* CallViewController.swift in Sources */,
+				AD6EDA351E8E7B2C00E19A61 /* CoordinatorProtocol.swift in Sources */,
+				AD6EDA321E8E7B1500E19A61 /* Decodable&Encodable.swift in Sources */,
+				AD6EDA6F1E8EAB3200E19A61 /* LoginViewModel.swift in Sources */,
+				AD6EDA591E8E8F5E00E19A61 /* CallCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD39226C1E8E65F70024877A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD39226D1E8E65F70024877A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD3922701E8E65F70024877A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD3922711E8E65F70024877A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD3922731E8E65F70024877A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D567A720DBB1950B11B30598 /* Pods-VideoChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29286X6DM7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = VideoChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uptech.VideoChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AD3922741E8E65F70024877A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF18DD944ACEC2925DE990FC /* Pods-VideoChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29286X6DM7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = VideoChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uptech.VideoChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD39225B1E8E65F70024877A /* Build configuration list for PBXProject "VideoChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD3922701E8E65F70024877A /* Debug */,
+				AD3922711E8E65F70024877A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD3922721E8E65F70024877A /* Build configuration list for PBXNativeTarget "VideoChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD3922731E8E65F70024877A /* Debug */,
+				AD3922741E8E65F70024877A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD3922581E8E65F70024877A /* Project object */;
+}

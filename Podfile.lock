@@ -1,0 +1,26 @@
+PODS:
+  - ObjectMapper (2.2.5)
+  - QuickBlox (2.9.2)
+  - Quickblox-WebRTC (2.5):
+    - QuickBlox (>= 2.7)
+  - RxCocoa (3.3.1):
+    - RxSwift (~> 3.3)
+  - RxSwift (3.3.1)
+
+DEPENDENCIES:
+  - ObjectMapper (~> 2.2)
+  - QuickBlox (~> 2.9)
+  - Quickblox-WebRTC (~> 2.5)
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
+
+SPEC CHECKSUMS:
+  ObjectMapper: fb30f71e08470d1e5a20b199fafe1246281db898
+  QuickBlox: 67cafa5d7b237db7344c506ca5dc38365180cacb
+  Quickblox-WebRTC: 79a88793ce090d2516963fe207f4d8eeecdb8b4f
+  RxCocoa: 7dcb7a1860fc9cd0e23dae67ab105fc2916670b6
+  RxSwift: 8fc9f2de6275a9101d518444e00bf32f1a42caac
+
+PODFILE CHECKSUM: 2bf0ca8845fa68a65e1122681df517da70f70557
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sZp-uL-OU4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="Rh1-cV-if0">
+            <objects>
+                <viewController id="sZp-uL-OU4" customClass="MainViewController" customModule="VideoChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lki-Jp-mHp"/>
+                        <viewControllerLayoutGuide type="bottom" id="BJz-2T-P4o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JXG-Pd-FWg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVf-XG-lwm">
+                                <rect key="frame" x="112" y="308" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.70980392160000005" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="OqU-mY-n7g"/>
+                                    <constraint firstAttribute="height" constant="50" id="hew-JI-CpG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Call">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GVf-XG-lwm" firstAttribute="centerY" secondItem="JXG-Pd-FWg" secondAttribute="centerY" id="N2Z-2S-SGU"/>
+                            <constraint firstItem="GVf-XG-lwm" firstAttribute="centerX" secondItem="JXG-Pd-FWg" secondAttribute="centerX" id="Tol-Ih-ZJS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="callButton" destination="GVf-XG-lwm" id="fCJ-64-bUE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vhr-lg-5xu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-29" y="-116"/>
+        </scene>
+    </scenes>
+</document>
