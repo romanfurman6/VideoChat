@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sZp-uL-OU4">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sZp-uL-OU4">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,35 +18,83 @@
                         <viewControllerLayoutGuide type="bottom" id="BJz-2T-P4o"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JXG-Pd-FWg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVf-XG-lwm">
-                                <rect key="frame" x="112" y="308" width="150" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLk-Hx-hko">
+                                <rect key="frame" x="0.0" y="20" width="320" height="456"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5r-Lf-2Gy" customClass="QBRTCRemoteVideoView">
+                                        <rect key="frame" x="8" y="109" width="306" height="347"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="0.2253325582" green="0.70933544640000001" blue="0.79807716610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4xO-4x-ad4">
+                                        <rect key="frame" x="8" y="109" width="92" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="0.2253325582" green="0.70933544640000001" blue="0.79807716610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lv-Uj-h5D">
+                                        <rect key="frame" x="8" y="71" width="64" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.2253325582" green="0.70933544640000001" blue="0.79807716610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Hide">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-HG-Jh3">
+                                <rect key="frame" x="60" y="510" width="200" height="50"/>
                                 <color key="backgroundColor" red="0.2274509804" green="0.70980392160000005" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="OqU-mY-n7g"/>
-                                    <constraint firstAttribute="height" constant="50" id="hew-JI-CpG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="840-R1-tD1"/>
+                                    <constraint firstAttribute="height" constant="50" id="AHk-OH-DIv"/>
+                                    <constraint firstAttribute="width" constant="200" id="C4q-Gd-Qyn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="mbi-Wq-Qcr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                <state key="normal" title="Reject">
+                                    <color key="titleColor" red="0.91372549020000005" green="0.1176470588" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVf-XG-lwm">
+                                <rect key="frame" x="60" y="510" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.70980392160000005" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ut7-Qf-ZxB"/>
+                                    <constraint firstAttribute="height" constant="50" id="yah-0E-k0H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
                                 <state key="normal" title="Call">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.11764705882352941" blue="0.38823529411764707" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="GVf-XG-lwm" firstAttribute="centerY" secondItem="JXG-Pd-FWg" secondAttribute="centerY" id="N2Z-2S-SGU"/>
-                            <constraint firstItem="GVf-XG-lwm" firstAttribute="centerX" secondItem="JXG-Pd-FWg" secondAttribute="centerX" id="Tol-Ih-ZJS"/>
+                            <constraint firstAttribute="trailing" secondItem="ZLk-Hx-hko" secondAttribute="trailing" id="2ya-K9-pDn"/>
+                            <constraint firstItem="ZLk-Hx-hko" firstAttribute="leading" secondItem="JXG-Pd-FWg" secondAttribute="leading" id="9l2-Nq-bGK"/>
+                            <constraint firstItem="ZLk-Hx-hko" firstAttribute="top" secondItem="Lki-Jp-mHp" secondAttribute="bottom" id="EIE-YG-Ylg"/>
+                            <constraint firstItem="BJz-2T-P4o" firstAttribute="top" secondItem="GVf-XG-lwm" secondAttribute="bottom" constant="8" symbolic="YES" id="JSd-n3-2ch"/>
+                            <constraint firstItem="GVf-XG-lwm" firstAttribute="centerX" secondItem="ZLk-Hx-hko" secondAttribute="centerX" id="Ls1-sy-veb"/>
+                            <constraint firstItem="GVf-XG-lwm" firstAttribute="top" secondItem="ZLk-Hx-hko" secondAttribute="bottom" constant="34" id="Nip-fk-0kc"/>
+                            <constraint firstItem="BJz-2T-P4o" firstAttribute="top" secondItem="y9p-HG-Jh3" secondAttribute="bottom" constant="8" id="NjP-EU-Xdj"/>
+                            <constraint firstItem="ZLk-Hx-hko" firstAttribute="centerX" secondItem="JXG-Pd-FWg" secondAttribute="centerX" id="o5W-nM-ufj"/>
+                            <constraint firstItem="y9p-HG-Jh3" firstAttribute="centerX" secondItem="JXG-Pd-FWg" secondAttribute="centerX" id="p4m-xo-6EY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="callButton" destination="GVf-XG-lwm" id="fCJ-64-bUE"/>
+                        <outlet property="hideCamera" destination="2lv-Uj-h5D" id="3hc-Zv-d2c"/>
+                        <outlet property="localVideoView" destination="4xO-4x-ad4" id="b9m-UK-bvv"/>
+                        <outlet property="rejectCallButton" destination="y9p-HG-Jh3" id="Dx6-aJ-bvr"/>
+                        <outlet property="remoteVideoView" destination="H5r-Lf-2Gy" id="pzE-kA-64f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhr-lg-5xu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29" y="-116"/>
+            <point key="canvasLocation" x="-513.04347826086962" y="-131.25"/>
         </scene>
     </scenes>
 </document>

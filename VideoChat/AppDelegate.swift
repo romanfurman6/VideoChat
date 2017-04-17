@@ -30,9 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   private func setupQBSetting() {
     QBSettings.setAuthKey(Constant.QBAuthKey)
-    QBSettings.setAccountKey(Constant.QBAccountKey)
     QBSettings.setAuthSecret(Constant.QBAuthSecret)
+    QBSettings.setAccountKey(Constant.QBAccountKey)
     QBSettings.setApplicationID(Constant.QBApplicationID)
+    QBSettings.setLogLevel(QBLogLevel.debug)
   }
 
 }

@@ -23,21 +23,10 @@ class AppCoordinator: CoordinatorProtocol {
 
   func start() {
     showLogin()
-    //showMain()
   }
 
-  func showMain() {
-    mainCoordinator = MainCoordinator(navigationController: navigationController)
-    mainCoordinator?.start()
-  }
-
-  func showLogin() {
+    func showLogin() {
     loginCoordinator = LoginCoordinator(navigationController: navigationController)
-    loginCoordinator?.didRegistered
-      .subscribe(onNext: { [weak self] in
-        self?.showMain()
-      })
-      .disposed(by: disposeBag)
     loginCoordinator?.start()
   }
 

@@ -14,46 +14,36 @@ import QuickbloxWebRTC
 
 final class LoginViewController: UIViewController, StoryboardInitializable {
 
-  // MARK: - Public Properties
+    // MARK: - Public Properties
 
-  var viewModel: LoginViewModelProtocol!
+    var viewModel: LoginViewModelProtocol!
 
-  // MARK: - Outlets
-  @IBOutlet weak var nameTextField: UITextField!
-  @IBOutlet weak var passwordTextField: UITextField!
-  @IBOutlet weak var registerButton: UIButton!
+    // MARK: - Outlets
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
 
-  // MARK: - Private Properties
-  private let disposeBag = DisposeBag()
+    // MARK: - Private Properties
+    private let disposeBag = DisposeBag()
 
-  // MARK: - View Lifecycle
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    self.navigationController?.isNavigationBarHidden = true
-  }
+    // MARK: - View Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-    nameTextField.resignFirstResponder()
-  }
+        nameTextField.text = viewModel.login
+        passwordTextField.text = viewModel.password
 
-  // MARK: - Binding
+        self.navigationController?.isNavigationBarHidden = true
 
-  func bindViewModel() {
-    nameTextField.rx.text.orEmpty
-      .asObservable()
-      .subscribe(onNext: { name in
-        self.viewModel.userName.onNext(name)
-      })
-      .disposed(by: disposeBag)
+        loginButton.rx.tap
+            .bindNext {
+                self.viewModel.signIn()
+            }
+            .disposed(by: disposeBag)
+    }
 
-    passwordTextField.rx.text.orEmpty
-      .asObservable()
-      .subscribe(onNext: { pass in
-        self.viewModel.userPassword.onNext(pass)
-      })
-      .disposed(by: disposeBag)
-
-  }
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        nameTextField.resignFirstResponder()
+    }
 }

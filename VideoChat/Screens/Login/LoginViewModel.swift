@@ -12,21 +12,44 @@ import Quickblox
 import QuickbloxWebRTC
 
 protocol LoginViewModelProtocol {
-  func createUser()
-  var userName: PublishSubject<String> { get }
-  var userPassword: PublishSubject<String> { get }
+    func signIn()
+    var user: PublishSubject<QBUUser> { get }
+    var login: String { get }
+    var password: String { get }
 }
 
 class LoginViewModel: LoginViewModelProtocol {
 
-  var userName = PublishSubject<String>()
-  var userPassword = PublishSubject<String>()
+    let user = PublishSubject<QBUUser>()
+    private let currentUser: User
 
-  func createUser() {
+    var login: String {
+        return currentUser.name
+    }
 
-  }
+    var password: String {
+        return currentUser.password
+    }
 
+    init(user: User) {
+        self.currentUser = user
+    }
 
-  init() {}
+    func signIn() {
+        
+        QBRequest.logIn(withUserLogin: login, password: password, successBlock: { (response, user) in
+            if response.isSuccess {
 
+                guard let user = user else { return }
+                print("LOGIN IS COMPLETED WITH USER ID \(user.id)")
+                user.password = self.currentUser.password
+                QBChat.instance().connect(with: user, completion: { _ in
+                    print("---CONNECTED TO CHAT---")
+                    self.user.onNext(user)
+                })
+            } else {
+                print(response.error?.description ?? "error-string")
+            }
+        }, errorBlock: nil)
+    }
 }

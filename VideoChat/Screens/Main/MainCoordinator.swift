@@ -15,42 +15,36 @@ import QuickbloxWebRTC
 
 class MainCoordinator: CoordinatorProtocol {
 
-  // MARK: - Public Properties
+    // MARK: - Public Properties
 
-  var finished: Observable<Void> { return finishedSubject.asObservable() }
+    var finished: Observable<Void> { return finishedSubject.asObservable() }
 
-  // MARK: - Private Properties
+    // MARK: - Private Properties
 
-  private var finishedSubject = PublishSubject<Void>()
-  private let navigationController: UINavigationController
-  private let disposeBag = DisposeBag()
-  private var callCoordinator: CoordinatorProtocol?
+    private var finishedSubject = PublishSubject<Void>()
+    private let navigationController: UINavigationController
+    private let disposeBag = DisposeBag()
+    private var callCoordinator: CoordinatorProtocol?
+    private var startCall = PublishSubject<Void>()
+    private let user: QBUUser
 
-  // MARK: - Lifecycle
+    // MARK: - Lifecycle
 
-  init(navigationController: UINavigationController) {
-    self.navigationController = navigationController
-  }
+    init(navigationController: UINavigationController, user: QBUUser) {
+        self.user = user
+        self.navigationController = navigationController
+    }
 
-  // MARK: - Coordinator Methods
+    // MARK: - Coordinator Methods
 
-  func start() {
-    QBRTCClient.initializeRTC()
-    let viewController = MainViewController.initFromStoryboard()
-    viewController.didPressCallButton
-      .observeOn(MainScheduler.instance)
-      .subscribe(onNext: { session in
-        self.showCall(with: session)
-      })
-      .disposed(by: disposeBag)
-    self.navigationController.setViewControllers([viewController], animated: true)
-  }
+    func start() {
+        
+        let viewController = MainViewController.initFromStoryboard()
+        viewController.user = user
 
-  func finish() {}
+        self.navigationController.pushViewController(viewController, animated: true)
+    }
 
-  func showCall(with session: QBRTCSession) {
-    callCoordinator = CallCoordinator(navigationController: self.navigationController, session: nil)
-    callCoordinator?.start()
-  }
-
+    func finish() {}
+    
 }

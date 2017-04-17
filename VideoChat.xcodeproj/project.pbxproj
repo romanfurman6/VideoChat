@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FE6948F1EA37B1D00710B55 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE6948E1EA37B1D00710B55 /* User.swift */; };
 		AD3922641E8E65F70024877A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3922631E8E65F70024877A /* AppDelegate.swift */; };
 		AD39226B1E8E65F70024877A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD39226A1E8E65F70024877A /* Assets.xcassets */; };
 		AD39226E1E8E65F70024877A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD39226C1E8E65F70024877A /* LaunchScreen.storyboard */; };
@@ -17,12 +18,8 @@
 		AD6EDA3B1E8E7B6200E19A61 /* RxHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA3A1E8E7B6200E19A61 /* RxHelpers.swift */; };
 		AD6EDA501E8E8F4500E19A61 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA4C1E8E8F4500E19A61 /* MainCoordinator.swift */; };
 		AD6EDA521E8E8F4500E19A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA4E1E8E8F4500E19A61 /* MainViewController.swift */; };
-		AD6EDA591E8E8F5E00E19A61 /* CallCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA551E8E8F5E00E19A61 /* CallCoordinator.swift */; };
-		AD6EDA5B1E8E8F5E00E19A61 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA571E8E8F5E00E19A61 /* CallViewController.swift */; };
-		AD6EDA5C1E8E8F5E00E19A61 /* CallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA581E8E8F5E00E19A61 /* CallViewModel.swift */; };
 		AD6EDA601E8E8F8F00E19A61 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA5F1E8E8F8F00E19A61 /* AppCoordinator.swift */; };
 		AD6EDA621E8E91AB00E19A61 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6EDA611E8E91AB00E19A61 /* MainViewController.storyboard */; };
-		AD6EDA641E8E927D00E19A61 /* CallViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6EDA631E8E927D00E19A61 /* CallViewController.storyboard */; };
 		AD6EDA661E8EA36000E19A61 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA651E8EA36000E19A61 /* Constant.swift */; };
 		AD6EDA6C1E8EAB3200E19A61 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA681E8EAB3200E19A61 /* LoginCoordinator.swift */; };
 		AD6EDA6E1E8EAB3200E19A61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EDA6A1E8EAB3200E19A61 /* LoginViewController.swift */; };
@@ -33,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		2EDF362EFA77DB1C6426EE48 /* Pods_VideoChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE6948E1EA37B1D00710B55 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AD3922601E8E65F70024877A /* VideoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3922631E8E65F70024877A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD39226A1E8E65F70024877A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,12 +43,8 @@
 		AD6EDA3A1E8E7B6200E19A61 /* RxHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxHelpers.swift; sourceTree = "<group>"; };
 		AD6EDA4C1E8E8F4500E19A61 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainCoordinator.swift; path = Main/MainCoordinator.swift; sourceTree = "<group>"; };
 		AD6EDA4E1E8E8F4500E19A61 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Main/MainViewController.swift; sourceTree = "<group>"; };
-		AD6EDA551E8E8F5E00E19A61 /* CallCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallCoordinator.swift; path = Call/CallCoordinator.swift; sourceTree = "<group>"; };
-		AD6EDA571E8E8F5E00E19A61 /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallViewController.swift; path = Call/CallViewController.swift; sourceTree = "<group>"; };
-		AD6EDA581E8E8F5E00E19A61 /* CallViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallViewModel.swift; path = Call/CallViewModel.swift; sourceTree = "<group>"; };
 		AD6EDA5F1E8E8F8F00E19A61 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		AD6EDA611E8E91AB00E19A61 /* MainViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
-		AD6EDA631E8E927D00E19A61 /* CallViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CallViewController.storyboard; sourceTree = "<group>"; };
 		AD6EDA651E8EA36000E19A61 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		AD6EDA681E8EAB3200E19A61 /* LoginCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginCoordinator.swift; path = Login/LoginCoordinator.swift; sourceTree = "<group>"; };
 		AD6EDA6A1E8EAB3200E19A61 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Login/LoginViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +74,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5FE694901EA37B2300710B55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FE6948E1EA37B1D00710B55 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		AD3922571E8E65F70024877A = {
 			isa = PBXGroup;
 			children = (
@@ -103,10 +105,11 @@
 			children = (
 				AD3922631E8E65F70024877A /* AppDelegate.swift */,
 				AD6EDA5F1E8E8F8F00E19A61 /* AppCoordinator.swift */,
-				AD6EDA5D1E8E8F6A00E19A61 /* Networking */,
+				AD6EDA651E8EA36000E19A61 /* Constant.swift */,
 				AD3922841E8E78660024877A /* Screens */,
 				AD6EDA301E8E7ACA00E19A61 /* Helpers */,
 				AD3922751E8E66130024877A /* SupportFiles */,
+				5FE694901EA37B2300710B55 /* Models */,
 			);
 			path = VideoChat;
 			sourceTree = "<group>";
@@ -117,7 +120,6 @@
 				AD39226A1E8E65F70024877A /* Assets.xcassets */,
 				AD39226C1E8E65F70024877A /* LaunchScreen.storyboard */,
 				AD39226F1E8E65F70024877A /* Info.plist */,
-				AD6EDA651E8EA36000E19A61 /* Constant.swift */,
 			);
 			name = SupportFiles;
 			sourceTree = "<group>";
@@ -127,7 +129,6 @@
 			children = (
 				AD6EDA671E8EAB1A00E19A61 /* Login */,
 				AD6EDA421E8E8F1300E19A61 /* Main */,
-				AD6EDA411E8E8F0D00E19A61 /* Call */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -144,17 +145,6 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
-		AD6EDA411E8E8F0D00E19A61 /* Call */ = {
-			isa = PBXGroup;
-			children = (
-				AD6EDA551E8E8F5E00E19A61 /* CallCoordinator.swift */,
-				AD6EDA571E8E8F5E00E19A61 /* CallViewController.swift */,
-				AD6EDA581E8E8F5E00E19A61 /* CallViewModel.swift */,
-				AD6EDA631E8E927D00E19A61 /* CallViewController.storyboard */,
-			);
-			name = Call;
-			sourceTree = "<group>";
-		};
 		AD6EDA421E8E8F1300E19A61 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,21 +153,6 @@
 				AD6EDA611E8E91AB00E19A61 /* MainViewController.storyboard */,
 			);
 			name = Main;
-			sourceTree = "<group>";
-		};
-		AD6EDA5D1E8E8F6A00E19A61 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				AD6EDA5E1E8E8F7600E19A61 /* Service */,
-			);
-			name = Networking;
-			sourceTree = "<group>";
-		};
-		AD6EDA5E1E8E8F7600E19A61 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Service;
 			sourceTree = "<group>";
 		};
 		AD6EDA671E8EAB1A00E19A61 /* Login */ = {
@@ -267,7 +242,6 @@
 				AD39226E1E8E65F70024877A /* LaunchScreen.storyboard in Resources */,
 				AD6EDA711E8EAB5300E19A61 /* LoginViewController.storyboard in Resources */,
 				AD39226B1E8E65F70024877A /* Assets.xcassets in Resources */,
-				AD6EDA641E8E927D00E19A61 /* CallViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,16 +306,14 @@
 				AD6EDA521E8E8F4500E19A61 /* MainViewController.swift in Sources */,
 				AD6EDA3B1E8E7B6200E19A61 /* RxHelpers.swift in Sources */,
 				AD6EDA661E8EA36000E19A61 /* Constant.swift in Sources */,
-				AD6EDA5C1E8E8F5E00E19A61 /* CallViewModel.swift in Sources */,
+				5FE6948F1EA37B1D00710B55 /* User.swift in Sources */,
 				AD6EDA601E8E8F8F00E19A61 /* AppCoordinator.swift in Sources */,
 				AD6EDA391E8E7B4A00E19A61 /* StoryboardInitializable.swift in Sources */,
 				AD6EDA501E8E8F4500E19A61 /* MainCoordinator.swift in Sources */,
 				AD3922641E8E65F70024877A /* AppDelegate.swift in Sources */,
-				AD6EDA5B1E8E8F5E00E19A61 /* CallViewController.swift in Sources */,
 				AD6EDA351E8E7B2C00E19A61 /* CoordinatorProtocol.swift in Sources */,
 				AD6EDA321E8E7B1500E19A61 /* Decodable&Encodable.swift in Sources */,
 				AD6EDA6F1E8EAB3200E19A61 /* LoginViewModel.swift in Sources */,
-				AD6EDA591E8E8F5E00E19A61 /* CallCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
