@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sZp-uL-OU4">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,24 +18,24 @@
                         <viewControllerLayoutGuide type="bottom" id="BJz-2T-P4o"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JXG-Pd-FWg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLk-Hx-hko">
-                                <rect key="frame" x="0.0" y="20" width="320" height="456"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="555"/>
                                 <subviews>
-                                    <view clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5r-Lf-2Gy" customClass="QBRTCRemoteVideoView">
-                                        <rect key="frame" x="8" y="109" width="306" height="347"/>
+                                    <view clipsSubviews="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5r-Lf-2Gy" customClass="QBRTCRemoteVideoView">
+                                        <rect key="frame" x="8" y="37" width="360" height="518"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="0.2253325582" green="0.70933544640000001" blue="0.79807716610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4xO-4x-ad4">
-                                        <rect key="frame" x="8" y="109" width="92" height="160"/>
+                                        <rect key="frame" x="8" y="37" width="108" height="160"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
                                         <color key="backgroundColor" red="0.2253325582" green="0.70933544640000001" blue="0.79807716610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lv-Uj-h5D">
-                                        <rect key="frame" x="8" y="71" width="64" height="30"/>
+                                        <rect key="frame" x="8" y="0.0" width="64" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.2253325582" green="0.70933544640000001" blue="0.79807716610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Hide">
@@ -45,7 +45,7 @@
                                 </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-HG-Jh3">
-                                <rect key="frame" x="60" y="510" width="200" height="50"/>
+                                <rect key="frame" x="87.5" y="609" width="200" height="50"/>
                                 <color key="backgroundColor" red="0.2274509804" green="0.70980392160000005" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="840-R1-tD1"/>
@@ -59,7 +59,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVf-XG-lwm">
-                                <rect key="frame" x="60" y="510" width="200" height="50"/>
+                                <rect key="frame" x="87.5" y="609" width="200" height="50"/>
                                 <color key="backgroundColor" red="0.2274509804" green="0.70980392160000005" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="ut7-Qf-ZxB"/>
@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhr-lg-5xu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-513.04347826086962" y="-131.25"/>
+            <point key="canvasLocation" x="-513.75" y="-132.04225352112675"/>
         </scene>
     </scenes>
 </document>

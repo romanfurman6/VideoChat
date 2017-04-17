@@ -92,6 +92,8 @@ final class MainViewController: UIViewController, StoryboardInitializable {
         let alert = UIAlertController(title: "VideoChat", message: "You did receive new session", preferredStyle: .alert)
         let accept = UIAlertAction(title: "Accept", style: .default, handler: { _ in
             self.currentSession = session
+            self.setupAudio()
+            self.setup()
             session.acceptCall(nil)
             self.rejectCallButton.isHidden = false
             self.callButton.isHidden = true

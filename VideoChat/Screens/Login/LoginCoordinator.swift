@@ -22,7 +22,7 @@ class LoginCoordinator: CoordinatorProtocol {
     private let navigationController: UINavigationController
     private let disposeBag = DisposeBag()
     private var mainCoordinator: CoordinatorProtocol?
-    private let currentUser = Constant.firstUser
+    private let currentUser = Constant.secondUser
 
     // MARK: - Lifecycle
 
