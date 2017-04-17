@@ -10,12 +10,7 @@ import UIKit
 import RxSwift
 import Quickblox
 
-
-protocol LoginCoordinatorProtocol: CoordinatorProtocol {
-
-}
-
-class LoginCoordinator: LoginCoordinatorProtocol {
+class LoginCoordinator: CoordinatorProtocol {
 
     // MARK: - Public Properties
 

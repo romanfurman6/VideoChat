@@ -38,13 +38,13 @@ class MainCoordinator: CoordinatorProtocol {
     // MARK: - Coordinator Methods
 
     func start() {
-        
+
         let viewController = MainViewController.initFromStoryboard()
         viewController.user = user
 
         self.navigationController.pushViewController(viewController, animated: true)
     }
-
+    
     func finish() {}
     
 }

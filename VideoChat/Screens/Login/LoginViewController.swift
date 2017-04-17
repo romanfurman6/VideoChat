@@ -31,7 +31,7 @@ final class LoginViewController: UIViewController, StoryboardInitializable {
         super.viewDidLoad()
 
         nameTextField.text = viewModel.login
-        passwordTextField.text = viewModel.password
+        passwordTextField.text = "******"
 
         self.navigationController?.isNavigationBarHidden = true
 
